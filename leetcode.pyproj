@@ -42,7 +42,7 @@
     <Compile Include="maximum_subarray.py" />
     <Compile Include="merge_linked_list.py" />
     <Compile Include="merge_sorted_array.py" />
-    <Compile Include="module3.py">
+    <Compile Include="bt_preorder_traversal.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="linked_list_cycle.py">
