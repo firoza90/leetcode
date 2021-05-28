@@ -42,6 +42,12 @@
     <Compile Include="maximum_subarray.py" />
     <Compile Include="merge_linked_list.py" />
     <Compile Include="merge_sorted_array.py" />
+    <Compile Include="module3.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="linked_list_cycle.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="single_number.py">
       <SubType>Code</SubType>
     </Compile>

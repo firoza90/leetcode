@@ -20,3 +20,18 @@ def createList(arr):
     for item in arr:
         result = ListNode(item, result)
     return result
+
+def addCycle(head, pos):
+    if pos == -1:
+        return head
+    ptr, pptr = head, head
+    while ptr:
+        pptr = ptr
+        ptr = ptr.next
+    tail = pptr
+    ptr = head
+    for i in range(0, pos):
+        ptr = ptr.next
+    tail.next = ptr
+    print("Cycle add at %d location with %d value" %(pos, ptr.val))
+    return head

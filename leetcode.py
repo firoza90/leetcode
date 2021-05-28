@@ -1,2 +1,2 @@
-from single_number import run
+from linked_list_cycle import run
 run()
