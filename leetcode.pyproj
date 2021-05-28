@@ -48,6 +48,9 @@
     <Compile Include="linked_list_cycle.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="bt_postorder_traversal.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="single_number.py">
       <SubType>Code</SubType>
     </Compile>
