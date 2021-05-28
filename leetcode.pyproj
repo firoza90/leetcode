@@ -42,6 +42,9 @@
     <Compile Include="maximum_subarray.py" />
     <Compile Include="merge_linked_list.py" />
     <Compile Include="merge_sorted_array.py" />
+    <Compile Include="single_number.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="palindrome.py">
       <SubType>Code</SubType>
     </Compile>
