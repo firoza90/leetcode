@@ -1,2 +1,2 @@
-from stock_buy_sell_mutiple_trans import run
+from palindrome import run
 run()

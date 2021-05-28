@@ -42,6 +42,9 @@
     <Compile Include="maximum_subarray.py" />
     <Compile Include="merge_linked_list.py" />
     <Compile Include="merge_sorted_array.py" />
+    <Compile Include="palindrome.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="palindrom_number.py" />
     <Compile Include="pascals_triangle.py" />
     <Compile Include="pascals_triangle_get_row.py" />
