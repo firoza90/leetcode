@@ -1,3 +1,6 @@
-from excel_sheet_column_number import main
-main()
+from reverse_bits import Solution
+sol = Solution()
+sol.test()
+
+
 
