@@ -1,3 +1,3 @@
-from bt_preorder_traversal import run
-run()
+from min_stack import test
+test()
 

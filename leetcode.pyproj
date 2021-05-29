@@ -51,6 +51,9 @@
     <Compile Include="bt_postorder_traversal.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="min_stack.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="single_number.py">
       <SubType>Code</SubType>
     </Compile>
