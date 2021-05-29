@@ -63,6 +63,9 @@
     <Compile Include="majority_element.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="excel_sheet_column_number.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="two_sum_array.py">
       <SubType>Code</SubType>
     </Compile>
