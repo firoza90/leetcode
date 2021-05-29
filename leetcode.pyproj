@@ -66,6 +66,9 @@
     <Compile Include="excel_sheet_column_number.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="count_1_bits.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="reverse_bits.py">
       <SubType>Code</SubType>
     </Compile>

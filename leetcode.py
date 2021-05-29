@@ -1,4 +1,4 @@
-from reverse_bits import Solution
+from count_1_bits import Solution
 sol = Solution()
 sol.test()
 
