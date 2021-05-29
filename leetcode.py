@@ -1,3 +1,3 @@
-from min_stack import test
-test()
+from two_sum_array import run
+run()
 

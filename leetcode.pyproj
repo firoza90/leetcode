@@ -57,6 +57,9 @@
     <Compile Include="linked_list_intersection.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="two_sum_array.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="single_number.py">
       <SubType>Code</SubType>
     </Compile>
