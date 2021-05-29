@@ -1,3 +1,3 @@
-from two_sum_array import run
-run()
+from excel_sheet_column_title import main
+main()
 
