@@ -1,3 +1,3 @@
-from excel_sheet_column_title import main
+from majority_element import main
 main()
 
