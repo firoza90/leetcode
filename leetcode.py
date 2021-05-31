@@ -4,9 +4,9 @@ first import the required module
 call the corresponding test module
 """
 
-from summary_range import Solution
+from power_of_two import Solution
 sol = Solution()
-sol.test_summaryRanges()
+sol.test_isPowerOfTwo()
 
 
 

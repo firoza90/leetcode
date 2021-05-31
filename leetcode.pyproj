@@ -87,6 +87,9 @@
     <Compile Include="bt_invert.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="power_of_two.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="summary_range.py">
       <SubType>Code</SubType>
     </Compile>
