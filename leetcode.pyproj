@@ -87,6 +87,9 @@
     <Compile Include="bt_invert.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="summary_range.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="stack_using_queues.py">
       <SubType>Code</SubType>
     </Compile>

@@ -4,9 +4,9 @@ first import the required module
 call the corresponding test module
 """
 
-from bt_invert import Solution
+from summary_range import Solution
 sol = Solution()
-sol.test_invertTree()
+sol.test_summaryRanges()
 
 
 
