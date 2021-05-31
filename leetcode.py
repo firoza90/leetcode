@@ -4,9 +4,9 @@ first import the required module
 call the corresponding test module
 """
 
-from linked_list_reverse import Solution
+from contains_duplicate import Solution
 sol = Solution()
-sol.test_reverseList()
+sol.test_containsDuplicate()
 
 
 
