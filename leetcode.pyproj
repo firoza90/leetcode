@@ -90,6 +90,9 @@
     <Compile Include="bst_lca.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="is_anagram.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="queue_using_stack.py">
       <SubType>Code</SubType>
     </Compile>

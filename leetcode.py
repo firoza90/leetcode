@@ -4,8 +4,8 @@ first import the required module
 call the corresponding test module
 """
 
-from bst_lca import Solution
+from is_anagram import Solution
 sol = Solution()
-sol.test_lowestCommonAncestor()
+sol.test_isAnagram()
 
 
