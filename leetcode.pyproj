@@ -69,6 +69,9 @@
     <Compile Include="count_1_bits.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="linked_list_remove_element.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="reverse_bits.py">
       <SubType>Code</SubType>
     </Compile>
