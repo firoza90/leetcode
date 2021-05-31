@@ -4,9 +4,9 @@ first import the required module
 call the corresponding test module
 """
 
-from isomorphic_strings import Solution
+from linked_list_reverse import Solution
 sol = Solution()
-sol.test_isIsomorphic()
+sol.test_reverseList()
 
 
 
