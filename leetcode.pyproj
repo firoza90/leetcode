@@ -72,6 +72,9 @@
     <Compile Include="linked_list_remove_element.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="count_primes.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="reverse_bits.py">
       <SubType>Code</SubType>
     </Compile>
