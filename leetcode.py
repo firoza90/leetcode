@@ -4,9 +4,8 @@ first import the required module
 call the corresponding test module
 """
 
-from queue_using_stack import Solution
+from bst_lca import Solution
 sol = Solution()
-sol.test_queueFromStack()
-
+sol.test_lowestCommonAncestor()
 
 

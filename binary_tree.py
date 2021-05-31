@@ -23,20 +23,19 @@ class TreeNode(object):
                 q.append(node.right)
         print(result)
 
-def _insertLevelOrder(arr, root, i, n):
-    if i < n:
-        if not arr[i]:
-            return None
-        root = TreeNode(arr[i])
-        root.left = _insertLevelOrder(arr, root.left, 2*i+1, n)
-        root.right = _insertLevelOrder(arr, root.right, 2*i+2, n)
-    return root
-
 def createTree(tree):
     if not tree:
         return None
-    root = None
-    root = _insertLevelOrder(tree, root, 0, len(tree))
+    nodes = [None if item == None else TreeNode(item) for item in tree]
+    child = nodes[::-1]
+    root = child.pop()
+    curr = root
+    for node in nodes:
+        if node:
+            if child:
+                node.left = child.pop()
+            if child:
+                node.right = child.pop()
     return root
 
 
