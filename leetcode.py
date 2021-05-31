@@ -4,9 +4,9 @@ first import the required module
 call the corresponding test module
 """
 
-from power_of_two import Solution
+from queue_using_stack import Solution
 sol = Solution()
-sol.test_isPowerOfTwo()
+sol.test_queueFromStack()
 
 
 
