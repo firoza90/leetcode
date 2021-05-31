@@ -75,6 +75,9 @@
     <Compile Include="count_primes.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="isomorphic_strings.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="reverse_bits.py">
       <SubType>Code</SubType>
     </Compile>

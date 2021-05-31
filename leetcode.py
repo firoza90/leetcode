@@ -4,9 +4,9 @@ first import the required module
 call the corresponding test module
 """
 
-from count_primes import Solution
+from isomorphic_strings import Solution
 sol = Solution()
-sol.test_countPrimes()
+sol.test_isIsomorphic()
 
 
 
