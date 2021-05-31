@@ -81,6 +81,9 @@
     <Compile Include="contains_duplicate.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="contains_duplicate_2.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="reverse_bits.py">
       <SubType>Code</SubType>
     </Compile>
