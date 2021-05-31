@@ -4,9 +4,9 @@ first import the required module
 call the corresponding test module
 """
 
-from stack_using_queues import Solution
+from bt_invert import Solution
 sol = Solution()
-sol.test_stackFromQueue()
+sol.test_invertTree()
 
 
 
