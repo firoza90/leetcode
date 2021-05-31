@@ -38,6 +38,9 @@ class Solution(object):
                 q.append(curr.right)
         return result[::-1]
 
-root = createTree([3,9,20,1,null,15,7])
-sol = Solution()
-print(sol.levelOrderBottom(root))
+    def test_levelOrderBottom(self):
+        testcases = [[3,9,20,1,null,15,7],]
+        for testcase in testcases:
+            print(testcase)
+            root = createTree(testcase)
+            print(self.levelOrderBottom(root))

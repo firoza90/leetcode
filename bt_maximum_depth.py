@@ -16,6 +16,9 @@ class Solution(object):
             return 0
         return max(self.maxDepth(root.left), self.maxDepth(root.right)) + 1
 
-root = createTree([3,9,20,null,null,15,7])
-sol = Solution()
-print(sol.maxDepth(root))
+    def test_maxDepth(self):
+        testcases = [[3,9,20,null,null,15,7],]
+        for testcase in testcases:
+            print(testcase)
+            root = createTree(testcase)
+            print(self.maxDepth(root))

@@ -24,4 +24,11 @@ class Solution(object):
                 return False
         return True
 
+    def test_isSymmetric(self):
+        testcases = []
+        for testcase in testcases:
+            print(testcase)
+            root = createTree(testcase)
+            print(self.isSymmetric(root))
+
 

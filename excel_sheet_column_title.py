@@ -31,7 +31,3 @@ class Solution:
         for testcase in testcases:
             print(testcase)
             print(self.convertToTitle(testcase))
-
-def main():
-    sol = Solution()
-    sol.test()

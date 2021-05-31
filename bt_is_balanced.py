@@ -24,6 +24,9 @@ class Solution(object):
         _, balanced = self._isBalanced(root)
         return balanced
 
-root = createTree([1,2,3,4,5,6,null,8])
-sol = Solution()
-print(sol.isBalanced(root))
+    def test_isBalanced(self):
+        testcases = [[1,2,3,4,5,6,null,8],]
+        for testcase in testcases:
+            print(testcase)
+            root = createTree(testcase)
+            print(self.isBalanced(root))

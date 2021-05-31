@@ -28,6 +28,6 @@ class Solution(object):
 
         return head
 
-l1 = createList([])
-sol = Solution()
-sol.deleteDuplicates(l1).toString()
+    def test_deleteDuplicates(self):
+        l1 = createList([])
+        self.deleteDuplicates(l1).toString()

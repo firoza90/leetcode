@@ -27,7 +27,3 @@ class Solution:
         for testcase in testcases:
             print(testcase)
             print(self.titleToNumber(testcase))
-
-def main():
-    sol = Solution()
-    sol.test()

@@ -6,20 +6,22 @@ Input: ["flower","flow","flight"]
 Output: "fl"
 """
 
-def longestCommonPrefix(strs):
-    prefix = ''
-    if not strs:
-        return prefix
-    if len(strs) == 1:
-        return strs[0]
-    strs.sort()
+class Solution:
+    def longestCommonPrefix(self, strs):
+        prefix = ''
+        if not strs:
+            return prefix
+        if len(strs) == 1:
+            return strs[0]
+        strs.sort()
     
-    for x, y in zip(strs[0], strs[-1]):
-        if x == y:
-            prefix += x
-        else:
-            break
-    return prefix
+        for x, y in zip(strs[0], strs[-1]):
+            if x == y:
+                prefix += x
+            else:
+                break
+        return prefix
 
-print(longestCommonPrefix(["flower","flow","flight"]))
-print(longestCommonPrefix(["dog","racecar","car"]))
+    def test_longestCommonPrefix(self):
+        print(self.longestCommonPrefix(["flower","flow","flight"]))
+        print(self.longestCommonPrefix(["dog","racecar","car"]))

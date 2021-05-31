@@ -22,15 +22,10 @@ class Solution:
                 end = end - 1
         return [start + 1, end + 1]
 
-    def test(self):
+    def test_twoSum(self):
         testcases = [([2,7,11,15], 9), ([2,3,4], 6), ([-1,0], -1)]
         for testcase in testcases:
             print(testcase)
             numbers, target = testcase
             result = self.twoSum(numbers, target)
             print(result)
-
-
-def run():
-    sol = Solution()
-    sol.test()

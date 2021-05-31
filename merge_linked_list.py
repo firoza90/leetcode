@@ -19,6 +19,12 @@ class ListNode(object):
             print(next.val)
             next = next.next
 
+def createList(arr):
+    result = None
+    arr = arr[::-1]
+    for item in arr:
+        result = ListNode(item, result)
+    return result
 
 class Solution(object):
     def mergeTwoLists(self, l1, l2):
@@ -62,19 +68,12 @@ class Solution(object):
                     return l1
         return l1
 
-
-def createList(arr):
-    result = None
-    arr = arr[::-1]
-    for item in arr:
-        result = ListNode(item, result)
-    return result
-
-l1 = createList([2])
-l2 = createList([1])
-
-print(l1.toString())
-print(l2.toString())
-sol = Solution()
-print(sol.mergeTwoLists(l1, l2).toString())
+    def test_mergeTwoLists(self):
+        testcases = []
+        for testcase in testcases:
+            l1 = createList(testcase[0])
+            l2 = createList(testcase[1])
+            print(l1.toString())
+            print(l2.toString())
+            print(self.mergeTwoLists(l1, l2).toString())
 

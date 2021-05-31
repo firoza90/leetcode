@@ -5,23 +5,26 @@ Input: s = "{[]}"
 Output: true
 """
 
-def isValid(s):
-    bMap = {
-        ')' : '(',
-        ']' : '[',
-        '}' : '{'
-        }
-    opening = ['(', '{', '[']
-    stack = []
 
-    for bracket in s:
-        if bracket in opening:
-            stack.append(bracket)
-        else:
-            if stack and bMap[bracket] == stack[-1]:
-                stack.pop()
+class Solution:
+    def isValid(self, s):
+        bMap = {
+            ')' : '(',
+            ']' : '[',
+            '}' : '{'
+            }
+        opening = ['(', '{', '[']
+        stack = []
+
+        for bracket in s:
+            if bracket in opening:
+                stack.append(bracket)
             else:
-                return False
-    return not stack
+                if stack and bMap[bracket] == stack[-1]:
+                    stack.pop()
+                else:
+                    return False
+        return not stack
 
-print(isValid('{[]}()({()()})'))
+    def test_isValid(self):
+        print(self.isValid('{[]}()({()()})'))

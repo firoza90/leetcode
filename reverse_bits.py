@@ -32,7 +32,7 @@ class Solution:
             mask = mask >> 1
         return result
 
-    def test(self):
+    def test_reverseBits(self):
         testcases = [0b00000010100101000001111010011100, 0b11111111111111111111111111111101]
         for testcase in testcases:
             print(testcase)

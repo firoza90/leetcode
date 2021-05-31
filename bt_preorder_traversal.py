@@ -6,19 +6,20 @@ from binary_tree import TreeNode, createTree
 null = None
 
 
-def run():
-    testCases = [[1,null,2,3], [], [1]]
-    for testCase in testCases:
-        print(testCase)
-        tree = createTree(testCase)
-        print(preorderTraversal(tree))
-        print("\n\n")
+class Solution:
+    def test_preorderTraversal(self):
+        testCases = [[1,null,2,3], [], [1]]
+        for testCase in testCases:
+            print(testCase)
+            tree = createTree(testCase)
+            print(self.preorderTraversal(tree))
+            print("\n\n")
 
-def preorderTraversal(root):
-    if not root:
-        return []
-    result = []
-    result.append(root.val)
-    result.extend(preorderTraversal(root.left))
-    result.extend(preorderTraversal(root.right))
-    return result
+    def preorderTraversal(self, root):
+        if not root:
+            return []
+        result = []
+        result.append(root.val)
+        result.extend(self.preorderTraversal(root.left))
+        result.extend(self.preorderTraversal(root.right))
+        return result

@@ -4,7 +4,7 @@ Given the heads of two singly linked-lists headA and headB, return the node at w
 If the two linked lists have no intersection at all, return null.
 """
 
-from linked_list import ListNode
+from linked_list import ListNode, createList
 
 class Solution:
     ### O(n) Space Complexity
@@ -67,3 +67,14 @@ class Solution:
 
         return None
 
+    def test_getIntersectionNode(self):
+        testcases = []
+        for testcase in testcases:
+            print(testcase)
+            l1 = createList(testcase[0])
+            l2 = createList(testcase[1])
+            intersection = self.getIntersectionNode(l1, l2)
+            if intersection:
+                print(intersection.val)
+            else:
+                print('No intersection')

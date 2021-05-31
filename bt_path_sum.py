@@ -25,12 +25,13 @@ class Solution:
             return False
         return self._hasPathSum(root, 0, sum)
 
-sol = Solution()
-testCases = [([5,4,8,11,null,13,4,7,2,null,null,null,1], 22), ([1,2], 1), ([], 0)]
-for testCase in testCases:
-    treeValue, sum = testCase
-    tree = createTree(treeValue)
-    result = sol.hasPathSum(tree, sum)
-    tree.printTree() if tree else print("[]")
-    print(sum)
-    print("Result : %s\n\n" %result)
+    def test_hasPathSum(self):
+        testcases = [([5,4,8,11,null,13,4,7,2,null,null,null,1], 22), ([1,2], 1), ([], 0)]
+        for testcase in testcases:
+            print(testcase)
+            treeValue, sum = testCase
+            tree = createTree(treeValue)
+            result = self.hasPathSum(tree, sum)
+            tree.printTree() if tree else print("[]")
+            print(sum)
+            print("Result : %s\n\n" %result)

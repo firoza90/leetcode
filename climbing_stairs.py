@@ -10,11 +10,13 @@ Explanation: There are two ways to climb to the top.
 2. 2 steps
 """
 
-def climbStairs(n):
-    result = [1,2]
+class Solution:
+    def climbStairs(self, n):
+        result = [1,2]
 
-    for i in range(2, n):
-        result.insert(i, result[i-1] + result[i-2])
-    return result[-1]
+        for i in range(2, n):
+            result.insert(i, result[i-1] + result[i-2])
+        return result[-1]
 
-print(climbStairs(5))
+    def test_climbStairs(self):
+        print(self.climbStairs(5))

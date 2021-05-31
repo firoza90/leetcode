@@ -49,38 +49,40 @@ class MinStackOperation:
     top = "top"
     getMin = "getMin"
 
-def test():
-    def validStack(minStack):
-        if not minStack:
-            print("Cannot perform operation : %s" %operations[i])
-            return False
-        else:
-            return True
-    testcases = [(["MinStack","push","push","push","getMin","pop","top","getMin"] , [[],[-2],[0],[-3],[],[],[],[]]),]
-    for testcase in testcases:
-        result = []
-        operations, values = testcase
-        minStack = None
-        for i in range(0, len(operations)):
-            if operations[i] == MinStackOperation.minStack:
-                minStack = MinStack()
-                result.append(None)
-            elif operations[i] == MinStackOperation.push:
-                if not validStack(minStack):
-                    break
-                minStack.push(values[i][0])
-                result.append(None)
-            elif operations[i] == MinStackOperation.pop:
-                if not validStack(minStack):
-                    break
-                minStack.pop()
-                result.append(None)
-            elif operations[i] == MinStackOperation.top:
-                if not validStack(minStack):
-                    break
-                result.append(minStack.top())
-            elif operations[i] == MinStackOperation.getMin:
-                if not validStack(minStack):
-                    break
-                result.append(minStack.getMin())
-        print(result)
+
+class Solution:
+    def test_minStackt(self):
+        def validStack(minStack):
+            if not minStack:
+                print("Cannot perform operation : %s" %operations[i])
+                return False
+            else:
+                return True
+        testcases = [(["MinStack","push","push","push","getMin","pop","top","getMin"] , [[],[-2],[0],[-3],[],[],[],[]]),]
+        for testcase in testcases:
+            result = []
+            operations, values = testcase
+            minStack = None
+            for i in range(0, len(operations)):
+                if operations[i] == MinStackOperation.minStack:
+                    minStack = MinStack()
+                    result.append(None)
+                elif operations[i] == MinStackOperation.push:
+                    if not validStack(minStack):
+                        break
+                    minStack.push(values[i][0])
+                    result.append(None)
+                elif operations[i] == MinStackOperation.pop:
+                    if not validStack(minStack):
+                        break
+                    minStack.pop()
+                    result.append(None)
+                elif operations[i] == MinStackOperation.top:
+                    if not validStack(minStack):
+                        break
+                    result.append(minStack.top())
+                elif operations[i] == MinStackOperation.getMin:
+                    if not validStack(minStack):
+                        break
+                    result.append(minStack.getMin())
+            print(result)

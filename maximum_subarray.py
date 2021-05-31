@@ -5,16 +5,18 @@ Input: nums = [-2,1,-3,4,-1,2,1,-5,4]
 Output: 6
 """
 
-def maxSubArray(nums):
-    max_sum, curr_sum = -float("inf"), 0
+class Solution:
+    def maxSubArray(self, nums):
+        max_sum, curr_sum = -float("inf"), 0
 
-    for i in range(0, len(nums)):
-        curr_sum += nums[i]
-        if curr_sum >= max_sum:
-            max_sum = curr_sum
-        if curr_sum <= 0:
-            curr_sum = 0
-    return max_sum
+        for i in range(0, len(nums)):
+            curr_sum += nums[i]
+            if curr_sum >= max_sum:
+                max_sum = curr_sum
+            if curr_sum <= 0:
+                curr_sum = 0
+        return max_sum
 
-print(maxSubArray([-2,1,-3,4,-1,2,1,-5,4]))
+    def test_maxSubArray(self):
+        print(self.maxSubArray([-2,1,-3,4,-1,2,1,-5,4]))
 

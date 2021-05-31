@@ -6,15 +6,16 @@ Input: nums = [2,2,1]
 Output: 1
 """
 
-def singleNumber(nums):
-    result = 0
-    for item in nums:
-        result = result ^ item
-    return result
+class Solution:
+    def singleNumber(self, nums):
+        result = 0
+        for item in nums:
+            result = result ^ item
+        return result
 
-def run():
-    testCases = [[2,2,1],  [4,1,2,1,2], [1]]
-    for testCase in testCases:
-        print(testCase)
-        print(singleNumber(testCase))
-        print("\n\n")
+    def test_singleNumber(self):
+        testCases = [[2,2,1],  [4,1,2,1,2], [1]]
+        for testCase in testCases:
+            print(testCase)
+            print(self.singleNumber(testCase))
+            print("\n\n")

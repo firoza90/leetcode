@@ -6,17 +6,20 @@ Find two lines, which together with x-axis forms a container, such that the cont
 Input: [1,8,6,2,5,4,8,3,7]
 Output: 49
 """
-def maxArea(height):
-    low, high = 0, len(height) - 1
-    max_area = 0
-    while (high - low >= 1 ):
-        max_area = max(max_area, min(height[low], height[high]) * (high - low))
-        if height[low] < height[high]:
-            low += 1
-        else:
-            high -= 1
-    return max_area
 
-print(maxArea([2,3,4,5,18,17,6]))
-print(maxArea([1,8,6,2,5,4,8,3,7]))
+class Solution:
+    def maxArea(self, height):
+        low, high = 0, len(height) - 1
+        max_area = 0
+        while (high - low >= 1 ):
+            max_area = max(max_area, min(height[low], height[high]) * (high - low))
+            if height[low] < height[high]:
+                low += 1
+            else:
+                high -= 1
+        return max_area
+
+    def test_maxArea(self):
+        print(maxArea([2,3,4,5,18,17,6]))
+        print(maxArea([1,8,6,2,5,4,8,3,7]))
 

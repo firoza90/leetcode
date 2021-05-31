@@ -9,24 +9,26 @@ Output: [1,2,4]
 Explanation: The array represents the integer 123.
 """
 
-def plusOne(digits):
-    digits = digits[::-1]
-    carry = 1
-    for i in range(0, len(digits)):
-        if carry == 0:
-            break
-        else:
-            if digits[i] == 9:
-                digits[i] = 0
+class Solution:
+    def plusOne(self, digits):
+        digits = digits[::-1]
+        carry = 1
+        for i in range(0, len(digits)):
+            if carry == 0:
+                break
             else:
-                digits[i]+=1
-                carry = 0
-    if carry == 1:
-        digits.append(1)
-    return digits[::-1]
+                if digits[i] == 9:
+                    digits[i] = 0
+                else:
+                    digits[i]+=1
+                    carry = 0
+        if carry == 1:
+            digits.append(1)
+        return digits[::-1]
 
-print(plusOne([1,2,3]))
-print(plusOne([4,3,2,1]))
-print(plusOne([0]))
-print(plusOne([9]))
+    def test_plusOne(self):
+        print(self.plusOne([1,2,3]))
+        print(self.plusOne([4,3,2,1]))
+        print(self.plusOne([0]))
+        print(self.plusOne([9]))
 

@@ -16,7 +16,7 @@ class Solution:
             mask = mask >> 1
         return count
 
-    def test(self):
+    def test_hammingWeight(self):
         testcases = [0b00000000000000000000000000001011, 0b00000000000000000000000010000000, 0b11111111111111111111111111111101, ]
         for testcase in testcases:
             print(testcase)

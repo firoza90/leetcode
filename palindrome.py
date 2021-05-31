@@ -13,14 +13,15 @@ Output: false
 Explanation: "raceacar" is not a palindrome.
 """
 
-def isPalindrome(s: str) -> bool:
-    import re
-    string = re.sub(r'\W+', '', s).replace('_', '').lower()
-    return string == string[::-1]
+class Solution:
+    def isPalindrome(self, s: str) -> bool:
+        import re
+        string = re.sub(r'\W+', '', s).replace('_', '').lower()
+        return string == string[::-1]
 
-def run():
-    testCases = ["A man, a plan, a canal: Panama", "race a car"]
-    for testCase in testCases:
-        print(testCase)
-        print(isPalindrome(testCase))
-        print("\n\n")
+    def test_isPalindrome():
+        testCases = ["A man, a plan, a canal: Panama", "race a car"]
+        for testCase in testCases:
+            print(testCase)
+            print(self.isPalindrome(testCase))
+            print("\n\n")

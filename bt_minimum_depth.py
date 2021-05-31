@@ -18,8 +18,10 @@ class Solution(object):
             return max(self.minDepth(root.left), self.minDepth(root.right)) + 1
         else: 
             return min(self.minDepth(root.left), self.minDepth(root.right)) + 1 
-
-
-root = createTree([3,9,20,null,null,15,7])
-sol = Solution()
-print(sol.minDepth(root))
+        
+    def test_minDepth(self):
+        testcases = [[3,9,20,null,null,15,7],]
+        for testcase in testcases:
+            print(testcase)
+            root = createTree(testcase)
+            print(self.minDepth(root))

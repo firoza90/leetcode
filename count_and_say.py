@@ -15,43 +15,45 @@ counting the number of digits in groups of the same digit.
 Note: Each term of the sequence of integers will be represented as a string.
 """
 
-def countAndSay(n):
-    # base condition
-    if n == 1:
-        return "1"
+class Solution:
+    def countAndSay(self, n):
+        # base condition
+        if n == 1:
+            return "1"
 
-    prevResult = countAndSay(n-1)
-    result = ""
-    count = 0
-    curr = prevResult[0]
+        prevResult = self.countAndSay(n-1)
+        result = ""
+        count = 0
+        curr = prevResult[0]
 
-    for digit in prevResult:
-        if digit == curr:
-            count += 1
-        else:
-            result += str(count) + curr
-            curr = digit
-            count = 1
-    return result + str(count) + curr
-
-def countAndSay_iter(n):
-    result = "1"
-    c = 2
-    while (c <= n):
-        count = 1
-        curr = ""
-        for i in range(1, len(result)):
-            if result[i] == result[i-1]:
-                count+=1
+        for digit in prevResult:
+            if digit == curr:
+                count += 1
             else:
-                temp += str(count) + result[i-1]
-                count+=1
-        result = temp + str(count) + result[-1]
-        c+=1
-    return result
+                result += str(count) + curr
+                curr = digit
+                count = 1
+        return result + str(count) + curr
 
-for i in range(1, 30):
-    print(countAndSay(i))
+    def countAndSay_iter(n):
+        result = "1"
+        c = 2
+        while (c <= n):
+            count = 1
+            curr = ""
+            for i in range(1, len(result)):
+                if result[i] == result[i-1]:
+                    count+=1
+                else:
+                    temp += str(count) + result[i-1]
+                    count+=1
+            result = temp + str(count) + result[-1]
+            c+=1
+        return result
+
+    def test_countAndSay(self):
+        for i in range(1, 30):
+            print(self.countAndSay(i))
 
 
 

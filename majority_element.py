@@ -32,8 +32,3 @@ class Solution:
         for testcase in testcases:
             print(testcase)
             print(self.majorityElement(testcase))
-
-
-def main():
-    sol = Solution()
-    sol.test()

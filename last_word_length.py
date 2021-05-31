@@ -8,10 +8,12 @@ Input: "Hello World"
 Output: 5
 """
 
-def lengthOfLastWord(s):
-    words = [word for word in s.split(" ") if word]
-    return 0 if not words else len(words[-1])
+class Solution:
+    def lengthOfLastWord(self, s):
+        words = [word for word in s.split(" ") if word]
+        return 0 if not words else len(words[-1])
 
-print(lengthOfLastWord("Hello World "))
-print(lengthOfLastWord("a "))
-print(lengthOfLastWord(" "))
+    def test_lengthOfLastWord(self):
+        print(self.lengthOfLastWord("Hello World "))
+        print(self.lengthOfLastWord("a "))
+        print(self.lengthOfLastWord(" "))

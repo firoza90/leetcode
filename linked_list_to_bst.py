@@ -24,5 +24,5 @@ class Solution(object):
         """
         return self._sortedArrayToBST(nums, 0, len(nums)-1)
 
-sol = Solution()
-sol.sortedArrayToBST([-10,-3,0,5,9]).printTree()
+    def test_sortedArrayToBST(self):
+        self.sortedArrayToBST([-10,-3,0,5,9]).printTree()
