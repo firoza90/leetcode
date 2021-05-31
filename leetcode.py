@@ -4,9 +4,9 @@ first import the required module
 call the corresponding test module
 """
 
-from contains_duplicate_2 import Solution
+from stack_using_queues import Solution
 sol = Solution()
-sol.test_containsNearbyDuplicate()
+sol.test_stackFromQueue()
 
 
 
