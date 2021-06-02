@@ -4,8 +4,8 @@ first import the required module
 call the corresponding test module
 """
 
-from medium.insert_interval import Solution
+from medium.meeting_room_2 import Solution
 sol = Solution()
-sol.test_insert()
+sol.test_minMeetingRooms()
 
 

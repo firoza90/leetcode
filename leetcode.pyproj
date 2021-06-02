@@ -43,6 +43,9 @@
     <Compile Include="medium\insert_interval.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="medium\meeting_room_2.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="merge_linked_list.py" />
     <Compile Include="merge_sorted_array.py" />
     <Compile Include="bt_preorder_traversal.py">
