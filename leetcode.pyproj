@@ -40,6 +40,9 @@
     <Compile Include="linked_list_to_bst.py" />
     <Compile Include="longest_common_prefix.py" />
     <Compile Include="maximum_subarray.py" />
+    <Compile Include="medium\insert_interval.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="merge_linked_list.py" />
     <Compile Include="merge_sorted_array.py" />
     <Compile Include="bt_preorder_traversal.py">
@@ -146,6 +149,9 @@
     <Compile Include="stock_buy_sell_mutiple_trans.py" />
     <Compile Include="three_sum.py" />
     <Compile Include="valid_parentheses.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="medium\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

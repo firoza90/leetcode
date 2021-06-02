@@ -4,8 +4,8 @@ first import the required module
 call the corresponding test module
 """
 
-from word_pattern import Solution
+from medium.insert_interval import Solution
 sol = Solution()
-sol.test_wordPattern()
+sol.test_insert()
 
 
