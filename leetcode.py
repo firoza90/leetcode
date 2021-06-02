@@ -4,8 +4,8 @@ first import the required module
 call the corresponding test module
 """
 
-from move_zeros import Solution
+from word_pattern import Solution
 sol = Solution()
-sol.test_moveZeroes()
+sol.test_wordPattern()
 
 
