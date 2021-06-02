@@ -4,8 +4,8 @@ first import the required module
 call the corresponding test module
 """
 
-from bt_paths import Solution
+from first_bad_version import Solution
 sol = Solution()
-sol.test_binaryTreePaths()
+sol.test_firstBadVersion()
 
 

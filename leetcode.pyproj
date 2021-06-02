@@ -96,6 +96,12 @@
     <Compile Include="bt_paths.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="missing_number.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="first_bad_version.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="queue_using_stack.py">
       <SubType>Code</SubType>
     </Compile>
