@@ -102,6 +102,9 @@
     <Compile Include="first_bad_version.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="move_zeros.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="queue_using_stack.py">
       <SubType>Code</SubType>
     </Compile>

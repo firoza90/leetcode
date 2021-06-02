@@ -4,8 +4,8 @@ first import the required module
 call the corresponding test module
 """
 
-from first_bad_version import Solution
+from move_zeros import Solution
 sol = Solution()
-sol.test_firstBadVersion()
+sol.test_moveZeroes()
 
 
