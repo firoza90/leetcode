@@ -4,8 +4,8 @@ first import the required module
 call the corresponding test module
 """
 
-from is_anagram import Solution
+from bt_paths import Solution
 sol = Solution()
-sol.test_isAnagram()
+sol.test_binaryTreePaths()
 
 
