@@ -46,6 +46,12 @@
     <Compile Include="medium\meeting_room_2.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="medium\bulls_and_cows.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="medium\decode_string.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="merge_linked_list.py" />
     <Compile Include="merge_sorted_array.py" />
     <Compile Include="bt_preorder_traversal.py">

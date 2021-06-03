@@ -4,8 +4,8 @@ first import the required module
 call the corresponding test module
 """
 
-from medium.meeting_room_2 import Solution
+from medium.bulls_and_cows import Solution
 sol = Solution()
-sol.test_minMeetingRooms()
+sol.test_getHint()
 
 
