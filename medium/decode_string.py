@@ -16,18 +16,26 @@ class Solution:
     def decodeString(self, s: str) -> str:
         patterns = []
         repeats = []
-        partial = ""
+        pattern = ""
         repeat = 0
         for ch in s:
-            if ch.isalpha():
-                partial+=ch
             if ch.isnumeric():
-                repeat+=(repeat*10)+int(ch)
-                patterns.append(partial)
-                partial = ""
-            if ch == "[":
+                repeat=(repeat*10)+int(ch)
+            elif ch.isalpha():
+                pattern+=ch
+            elif ch == "[":
                 repeats.append(repeat)
-            if ch == "]":
-                string = patterns.pop() * 
+                patterns.append(pattern)
+                repeat = 0
+                pattern = ""
+            elif ch == "]":
+                repeat = repeats.pop()
+                pattern = patterns.pop() + pattern *repeat 
+                repeat = 0
+        return pattern
 
-    def test_decodeString(self)
+    def test_decodeString(self):
+        testcases = ["3[z]2[2[y]pq4[2[jk]e1[f]]]ef", "100[leetcode]", "3[a2[c]]", "3[a]2[bc]",  "2[abc]3[cd]ef", "abc3[cd]xyz"]
+        for testcase in testcases:
+            print(testcase)
+            print(self.decodeString(testcase))

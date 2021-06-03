@@ -4,8 +4,8 @@ first import the required module
 call the corresponding test module
 """
 
-from medium.bulls_and_cows import Solution
+from medium.decode_string import Solution
 sol = Solution()
-sol.test_getHint()
+sol.test_decodeString()
 
 
