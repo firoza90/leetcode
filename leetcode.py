@@ -4,8 +4,8 @@ first import the required module
 call the corresponding test module
 """
 
-from medium.decode_string import Solution
+from medium.screen_fitting_sentence import Solution
 sol = Solution()
-sol.test_decodeString()
+sol.test_wordsTyping()
 
 

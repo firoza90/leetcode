@@ -52,6 +52,9 @@
     <Compile Include="medium\decode_string.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="medium\screen_fitting_sentence.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="merge_linked_list.py" />
     <Compile Include="merge_sorted_array.py" />
     <Compile Include="bt_preorder_traversal.py">
