@@ -52,6 +52,9 @@
     <Compile Include="medium\decode_string.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="medium\matrix_longest_line.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="medium\screen_fitting_sentence.py">
       <SubType>Code</SubType>
     </Compile>

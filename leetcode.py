@@ -4,8 +4,6 @@ first import the required module
 call the corresponding test module
 """
 
-from medium.screen_fitting_sentence import Solution
+from medium.matrix_longest_line import Solution
 sol = Solution()
-sol.test_wordsTyping()
-
-
+sol.test_longestLine()
