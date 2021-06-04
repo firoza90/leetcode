@@ -4,6 +4,7 @@ first import the required module
 call the corresponding test module
 """
 
-from medium.matrix_longest_line import Solution
+from medium.bt_duplicate_subtree import Solution
 sol = Solution()
-sol.test_longestLine()
+sol.test_findDuplicateSubtrees()
+

@@ -55,6 +55,12 @@
     <Compile Include="medium\matrix_longest_line.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="medium\bt_duplicate_subtree.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="medium\valid_square.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="medium\screen_fitting_sentence.py">
       <SubType>Code</SubType>
     </Compile>
