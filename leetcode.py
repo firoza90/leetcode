@@ -4,7 +4,7 @@ first import the required module
 call the corresponding test module
 """
 
-from medium.bt_duplicate_subtree import Solution
+from medium.max_area_of_island import Solution
 sol = Solution()
-sol.test_findDuplicateSubtrees()
+sol.test_maxAreaOfIsland()
 
