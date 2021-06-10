@@ -61,6 +61,9 @@
     <Compile Include="medium\max_area_of_island.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="medium\accounts_merge.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="medium\valid_square.py">
       <SubType>Code</SubType>
     </Compile>
